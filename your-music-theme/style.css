@@ -1,0 +1,169 @@
+/*
+Theme Name: Your Music Distribution
+Author: GitHub Copilot
+Description: A professional theme for music distribution services, inspired by ansmusiclimited.com.
+Version: 1.0
+*/
+
+/* --- Basic Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbar nav a:hover {
+    color: #fff;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+.btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 120px 0;
+    background-color: #181818;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #aaa;
+    margin-bottom: 2.5rem;
+}
+
+/* --- Services Section --- */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.service-card {
+    background-color: #1e1e1e;
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    color: #888;
+}
