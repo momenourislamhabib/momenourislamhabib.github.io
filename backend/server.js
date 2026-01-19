@@ -88,12 +88,14 @@ app.use((req, res) => {
   });
 });
 
-// Start server
-const PORT = config.port;
-app.listen(PORT, () => {
-  console.log(`Music Distribution Backend running on port ${PORT}`);
-  console.log(`Environment: ${config.nodeEnv}`);
-  console.log(`Upload directory: ${config.uploadDir}`);
-});
+// Start server only when not in test mode
+if (require.main === module) {
+  const PORT = config.port;
+  app.listen(PORT, () => {
+    console.log(`Music Distribution Backend running on port ${PORT}`);
+    console.log(`Environment: ${config.nodeEnv}`);
+    console.log(`Upload directory: ${config.uploadDir}`);
+  });
+}
 
 module.exports = app;
